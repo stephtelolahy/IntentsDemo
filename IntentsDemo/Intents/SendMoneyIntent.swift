@@ -9,7 +9,7 @@ import AppIntents
 
 struct SendMoneyIntent: AppIntent {
     static var title: LocalizedStringResource = "Send Money"
-    static var description = IntentDescription("Send money to a contact.")
+    static var description = IntentDescription("Send money to a contact")
 
     @Parameter(title: "Amount")
     var amount: Double
@@ -19,15 +19,6 @@ struct SendMoneyIntent: AppIntent {
 
     @AppDependency
     var navigationManager: NavigationManager
-
-    // MARK: - Not opening App
-
-//    func perform() async throws -> some ProvidesDialog {
-//        return .result(dialog: "Sending \(amount) euros to \(recipient).")
-//    }
-
-
-    // MARK: - Opening app
 
     static var openAppWhenRun: Bool = true
 

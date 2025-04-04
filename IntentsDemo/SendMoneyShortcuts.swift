@@ -30,5 +30,16 @@ class SendMoneyShortcuts: AppShortcutsProvider {
             shortTitle: "Send Money",
             systemImageName: "bahtsign.bank.building"
         )
+
+        AppShortcut(
+            intent: CheckBalanceIntent(),
+            phrases: [
+                "Check my balance in \(.applicationName)",
+                "What is my current balance in \(.applicationName)",
+                "Show my bank balance in \(.applicationName)"
+            ],
+            shortTitle: "Check Balance",
+            systemImageName: "dollarsign.circle"
+        )
     }
 }
