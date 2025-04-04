@@ -25,3 +25,13 @@ struct IntentsDemoApp: App {
         }
     }
 }
+
+@MainActor @Observable
+class NavigationManager {
+    var sendMoney: SendMoney? = nil
+}
+
+struct SendMoney: Sendable {
+    let amount: Double
+    let recipient: String
+}

@@ -1,5 +1,5 @@
 //
-//  SendMoneyShortcuts.swift
+//  IntentsDemoShortcuts.swift
 //  IntentsDemo
 //
 //  Created by Hugues Stéphano TELOLAHY on 21/03/2025.
@@ -7,7 +7,7 @@
 
 import AppIntents
 
-class SendMoneyShortcuts: AppShortcutsProvider {
+class IntentsDemoShortcuts: AppShortcutsProvider {
     /// The color the system uses to display the App Shortcuts in the Shortcuts app. This is currently unused.
     static var shortcutTileColor = ShortcutTileColor.purple
 
