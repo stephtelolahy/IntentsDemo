@@ -20,11 +20,16 @@ struct SendMoneyIntent: AppIntent {
     @AppDependency
     var navigationManager: NavigationManager
 
-    static var openAppWhenRun: Bool = true
+    // MARK: - Not opening App
 
 //    func perform() async throws -> some ProvidesDialog {
 //        return .result(dialog: "Sending \(amount) euros to \(recipient).")
 //    }
+
+
+    // MARK: - Opening app
+
+    static var openAppWhenRun: Bool = true
 
     func perform() async throws -> some IntentResult {
         await MainActor.run {
